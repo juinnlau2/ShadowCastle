@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://db3nm5ko0fak3"]
+
+[ext_resource type="Script" path="res://ui/enemy_h_box_container.gd" id="1_onm8c"]
+[ext_resource type="Texture2D" uid="uid://cnl2e8wbgpboq" path="res://img/ui/HUD.png" id="2_1m0i0"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f2cbj"]
+atlas = ExtResource("2_1m0i0")
+region = Rect2(307, 6, 58, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rle6x"]
+atlas = ExtResource("2_1m0i0")
+region = Rect2(308, 71, 56, 2)
+
+[node name="EnemyHBoxContainer" type="HBoxContainer"]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_onm8c")
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="."]
+layout_mode = 2
+size_flags_vertical = 4
+max_value = 1.0
+step = 0.0
+value = 1.0
+texture_over = SubResource("AtlasTexture_f2cbj")
+texture_progress = SubResource("AtlasTexture_rle6x")
+texture_progress_offset = Vector2(1, 1)

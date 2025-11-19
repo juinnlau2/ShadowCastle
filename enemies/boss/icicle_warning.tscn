@@ -1,0 +1,53 @@
+[gd_scene load_steps=12 format=3 uid="uid://bd7egssvrbu4o"]
+
+[ext_resource type="Texture2D" uid="uid://b454t5qnk6tx7" path="res://img/WarningSign_PixyFantasy/WarningSign01.png" id="1_xm14p"]
+[ext_resource type="Texture2D" uid="uid://dqkcakw0ynpya" path="res://img/WarningSign_PixyFantasy/WarningSign02.png" id="2_wikkg"]
+[ext_resource type="Texture2D" uid="uid://e72bd4inypju" path="res://img/WarningSign_PixyFantasy/WarningSign03.png" id="3_hkw82"]
+[ext_resource type="Texture2D" uid="uid://1g3j73mru50q" path="res://img/WarningSign_PixyFantasy/WarningSign04.png" id="4_ji4lo"]
+[ext_resource type="Texture2D" uid="uid://y683bic3rirs" path="res://img/WarningSign_PixyFantasy/WarningSign05.png" id="5_k5r82"]
+[ext_resource type="Texture2D" uid="uid://nxrpbg5gai7f" path="res://img/WarningSign_PixyFantasy/WarningSign06.png" id="6_y6ef5"]
+[ext_resource type="Texture2D" uid="uid://c2kr4gg2i5c7c" path="res://img/WarningSign_PixyFantasy/WarningSign07.png" id="7_mkva6"]
+[ext_resource type="Texture2D" uid="uid://cohtatb4qsvov" path="res://img/WarningSign_PixyFantasy/WarningSign08.png" id="8_tnfi8"]
+[ext_resource type="Texture2D" uid="uid://sirjbonbtwbr" path="res://img/WarningSign_PixyFantasy/WarningSign09.png" id="9_wg5jv"]
+[ext_resource type="Script" path="res://enemies/boss/icicle_warning.gd" id="10_nb73p"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7jmb0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_xm14p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wikkg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_hkw82")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ji4lo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_k5r82")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_y6ef5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_mkva6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_tnfi8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_wg5jv")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="IcicleWarning" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_7jmb0")
+frame = 8
+frame_progress = 1.0
+script = ExtResource("10_nb73p")

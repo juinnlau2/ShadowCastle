@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dcwivjqnw60ir"
+path="res://.godot/imported/Improv for Evil.mp3-749f4d6092b3af217ac90a87c0bd76a4.mp3str"
+
+[deps]
+
+source_file="res://assets/bgm/world1/Improv for Evil.mp3"
+dest_files=["res://.godot/imported/Improv for Evil.mp3-749f4d6092b3af217ac90a87c0bd76a4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

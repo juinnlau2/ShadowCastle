@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b4orwj3pc1ubt"
+path="res://.godot/imported/Ambush in Rattlesnake Gulch.mp3-6811f0bdbd81a30d6afb4f7d0293e786.mp3str"
+
+[deps]
+
+source_file="res://assets/bgm/world1/Ambush in Rattlesnake Gulch.mp3"
+dest_files=["res://.godot/imported/Ambush in Rattlesnake Gulch.mp3-6811f0bdbd81a30d6afb4f7d0293e786.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

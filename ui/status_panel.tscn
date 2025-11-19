@@ -1,0 +1,83 @@
+[gd_scene load_steps=11 format=3 uid="uid://dlbj27ik5mpe0"]
+
+[ext_resource type="Script" path="res://ui/status_panel.gd" id="1_wsmmw"]
+[ext_resource type="Texture2D" uid="uid://cnl2e8wbgpboq" path="res://img/ui/HUD.png" id="2_ttqgt"]
+[ext_resource type="Texture2D" uid="uid://bqv5w4mesghv1" path="res://img/character/Idle.png" id="3_3olut"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6wfd6"]
+texture = ExtResource("2_ttqgt")
+region_rect = Rect2(323, 203, 26, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mgxo2"]
+atlas = ExtResource("3_3olut")
+region = Rect2(60, 81, 12, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2bd55"]
+atlas = ExtResource("2_ttqgt")
+region = Rect2(307, 21, 58, 6)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nbp47"]
+atlas = ExtResource("2_ttqgt")
+region = Rect2(308, 118, 56, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5mak5"]
+atlas = ExtResource("2_ttqgt")
+region = Rect2(308, 86, 56, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xw3xg"]
+atlas = ExtResource("2_ttqgt")
+region = Rect2(307, 6, 58, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_drnjk"]
+atlas = ExtResource("2_ttqgt")
+region = Rect2(308, 135, 56, 2)
+
+[node name="StatusPanel" type="HBoxContainer"]
+script = ExtResource("1_wsmmw")
+
+[node name="AvatarBox" type="PanelContainer" parent="."]
+custom_minimum_size = Vector2(26, 26)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_6wfd6")
+
+[node name="Avatar" type="TextureRect" parent="AvatarBox"]
+layout_mode = 2
+texture = SubResource("AtlasTexture_mgxo2")
+stretch_mode = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+alignment = 1
+
+[node name="HealthBar" type="TextureProgressBar" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+max_value = 1.0
+step = 0.0
+value = 1.0
+texture_over = SubResource("AtlasTexture_2bd55")
+texture_progress = SubResource("AtlasTexture_nbp47")
+texture_progress_offset = Vector2(1, 1)
+
+[node name="EasedHealthBar" type="TextureProgressBar" parent="VBoxContainer/HealthBar"]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 4
+max_value = 1.0
+step = 0.0
+texture_progress = SubResource("AtlasTexture_5mak5")
+texture_progress_offset = Vector2(1, 1)
+
+[node name="EnergyBar" type="TextureProgressBar" parent="VBoxContainer"]
+layout_mode = 2
+max_value = 1.0
+step = 0.0
+value = 1.0
+texture_over = SubResource("AtlasTexture_xw3xg")
+texture_progress = SubResource("AtlasTexture_drnjk")
+texture_progress_offset = Vector2(1, 1)

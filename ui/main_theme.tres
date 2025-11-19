@@ -1,0 +1,66 @@
+[gd_resource type="Theme" load_steps=9 format=3 uid="uid://c5ne88b8a0n5l"]
+
+[ext_resource type="Texture2D" uid="uid://cnl2e8wbgpboq" path="res://img/ui/HUD.png" id="1_cg7sc"]
+[ext_resource type="FontFile" uid="uid://bs14316g6m6tn" path="res://assets/SmileySans-Oblique.otf" id="1_llnr6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4q7ti"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jytf0"]
+texture = ExtResource("1_cg7sc")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+region_rect = Rect2(94, 14, 20, 20)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dvmvm"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_28dku"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_b803n"]
+texture = ExtResource("1_cg7sc")
+texture_margin_left = 1.0
+texture_margin_top = 2.0
+texture_margin_right = 2.0
+texture_margin_bottom = 2.0
+region_rect = Rect2(95, 207, 18, 18)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5mx6l"]
+content_margin_left = 16.0
+content_margin_top = 4.0
+content_margin_right = 16.0
+content_margin_bottom = 4.0
+texture = ExtResource("1_cg7sc")
+texture_margin_left = 3.0
+texture_margin_top = 3.0
+texture_margin_right = 3.0
+texture_margin_bottom = 3.0
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 2
+region_rect = Rect2(64, 272, 16, 16)
+
+[resource]
+default_font = ExtResource("1_llnr6")
+Button/colors/font_outline_color = Color(0, 0, 0, 0.690196)
+Button/colors/font_pressed_color = Color(1, 1, 1, 0.698039)
+Button/constants/outline_size = 6
+Button/styles/disabled = SubResource("StyleBoxEmpty_4q7ti")
+Button/styles/focus = SubResource("StyleBoxTexture_jytf0")
+Button/styles/hover = SubResource("StyleBoxEmpty_4q7ti")
+Button/styles/normal = SubResource("StyleBoxEmpty_dvmvm")
+Button/styles/pressed = SubResource("StyleBoxEmpty_28dku")
+HSlider/styles/slider = SubResource("StyleBoxTexture_b803n")
+Label/colors/font_shadow_color = Color(0, 0, 0, 0.701961)
+PanelContainer/styles/panel = SubResource("StyleBoxTexture_5mx6l")
